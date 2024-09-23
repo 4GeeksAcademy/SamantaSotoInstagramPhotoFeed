@@ -17,132 +17,75 @@
 <body>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <div class="">
+      <div class="container d-flex">
+        <div class="me-auto">
           <i class="fa-brands fa-instagram fs-4"></i>
-          <a class="navbar-brand me-auto fs-5 p-2 text-dark fw-semibold me-auto">Instagram</a>
+          <a class="navbar-brand fs-5 fw-semibold">Instagram</a>
         </div>
-        <div class="">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              data-bs-whatever="@mdo">Create a new post</button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5 fw-semibold text-dark" id="exampleModalLabel">Create a new post</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="mb-3">
-                        <label for="message-text" class="col-form-label fw-semibold text-dark">Caption:</label>
-                        <textarea class="form-control" id="message-text"
-                          placeholder="Add the caption of your post here"></textarea>
-                      </div>
-                    </form>
-                    <div class="d-flex">
-                      <div class="bg-light p-2 border border-1 rounded me-2">
-                        <i class="fa-solid fa-camera"></i>
-                      </div>
-                      <div class="bg-light p-2 border border-1 rounded">
-                        <i class="fa-solid fa-location-dot"></i>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-lg-0">
+            <li class="nav-item">
+              <button type="button" class="btn btn-success fw-semibold" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 fw-semibold text-dark" id="exampleModalLabel">Create a new post</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label fw-semibold text-dark">Caption:</label>
+                          <textarea class="form-control" id="message-text"
+                            placeholder="Add the caption of your post here"></textarea>
+                        </div>
+                      </form>
+                      <div class="d-flex">
+                        <div class="bg-light p-2 border border-1 rounded">
+                          <i class="fa-solid fa-camera"></i>
+                        </div>
+                        <div class="bg-light p-2 border border-1 rounded">
+                          <i class="fa-solid fa-location-dot"></i>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Publish</button>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Publish</button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="dropdown ms-4">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="fa-solid fa-gear"></i>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                <li><a class="dropdown-item" href="#">Privacy and data</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!--
-    <nav class="navbar bg-body-tertiary p-2">
-      <div class="container-fluid d-flex">
-        <i class="fa-brands fa-instagram fs-4"></i>
-        <a class="navbar-brand me-auto fs-5 p-2 text-dark fw-semibold">Instagram</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="d-flex" role="search">
-            <button type="button" class="btn btn-success me-auto" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              data-bs-whatever="@mdo">Create a new post</button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5 fw-semibold text-dark" id="exampleModalLabel">Create a new post</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="mb-3">
-                        <label for="message-text" class="col-form-label fw-semibold text-dark">Caption:</label>
-                        <textarea class="form-control" id="message-text"
-                          placeholder="Add the caption of your post here"></textarea>
-                      </div>
-                    </form>
-                    <div class="d-flex">
-                      <div class="bg-light p-2 border border-1 rounded me-2">
-                        <i class="fa-solid fa-camera"></i>
-                      </div>
-                      <div class="bg-light p-2 border border-1 rounded">
-                        <i class="fa-solid fa-location-dot"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Publish</button>
-                  </div>
-                </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown mt-2 ms-md-4 mt-md-0">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
               </div>
-            </div>
-            <div class="dropdown ms-4">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="fa-solid fa-gear"></i>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                <li><a class="dropdown-item" href="#">Privacy and data</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-              </ul>
-            </div>
-          </form>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-    -->
+
     <ul class="nav nav-tabs d-flex justify-content-center border border-0" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active border border-0" id="home-tab" data-bs-toggle="tab"
@@ -181,7 +124,7 @@
       <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
         <div class=""">
           <div class=" col-12">
-          <div class="card border-secondary-subtle mb-3" style="max-width: 33rem;">
+          <div class="card border-secondary-subtle mb-3" style="max-width: 35rem;">
             <div class="card-header bg-transparent border-secondary-subtle d-flex fw-semibold">
               <h5 class="card-title me-auto">My Crazy dog Spark!</h5>
               <p class="card-text">8/26</p>
